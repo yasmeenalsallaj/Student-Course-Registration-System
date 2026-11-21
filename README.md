@@ -1,2 +1,2 @@
-# -Student-Course-Registration-System
+# Student-Course-Registration-System
 Java-based Student Course Registration System
