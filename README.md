@@ -57,4 +57,34 @@ java -cp out Main
 
 The program starts with sample data so every feature can be tried immediately.
 
-- Students: `S1` Lina
+- Students: `S1` Lina S2` Omar Nasser, `S3` Rana Khalil, `S4` Sara Mansour
+- Courses: CS101, CS201, MA101, PH101, EN101, HS101, DB301, SE301, CS401
+
+Things to try:
+- `S1` has completed CS101, so she can register in CS201 (which requires CS101). `S4` cannot.
+- `DB301` has only one seat and it is already taken by `S2`, so it shows as full.
+- `S3` is already registered in CS101, so registering in `SE301` fails with a time conflict.
+- `S3` already has 15 credits, so registering in `CS401` (4 credits) exceeds the 18-credit limit.
+
+## Project Structure
+
+```
+src/
+├── Main.java                         # Entry point, role selection, sample data
+├── model/                            # Student, Course, Schedule, Registration
+├── repository/                       # StudentRepository, CourseRepository (in-memory storage)
+├── service/RegistrationService.java  # All registration business rules
+├── exception/RegistrationException.java
+└── ui/                               # AdminMenu, StudentMenu, InputUtil
+docs/
+└── api-contract.md                   # Decisions agreed by the team
+```
+
+## Notes
+
+- Data is stored in memory only, so it is reset every time the program is closed.
+- There is no login: the user chooses the Admin or Student menu.
+
+## Git Workflow
+
+Each member worked on a separate feature branch and merged into `main` through Pull Requests. Tasks were tracked with GitHub Issues.
