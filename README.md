@@ -57,7 +57,7 @@ java -cp out Main
 
 The program starts with sample data so every feature can be tried immediately.
 
-- Students: `S1` Lina S2` Omar Nasser, `S3` Rana Khalil, `S4` Sara Mansour
+- Students: S1 Lina Haddad, S2 Omar Nasser, S3 Rana Khalil, S4 Sara Mansour
 - Courses: CS101, CS201, MA101, PH101, EN101, HS101, DB301, SE301, CS401
 
 Things to try:
